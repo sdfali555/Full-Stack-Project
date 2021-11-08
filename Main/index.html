@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+   
+    <title>Responsive footer</title>
+</head>
+<body>
+    <section class="main">
+       SparkPlug Automotives <img src="./Assets/caaaar.jpg" alt="image not found">
+    </section>
+    <footer>
+        <section class="sec1">
+            <section class="about">
+                <h2>
+                    About Us
+                </h2>
+                <p>
+                    SparkPlug Automotives is an online store for automobile parts and accessories.We have a complete selection of high-quality Genuine,Aftermarket and replacement parts for a wide range of car and bike makes offered at the best price.
+
+                </p>
+            </section>
+            <section class="link1">
+                <h2>
+                    Categories
+                </h2>
+                <ul>
+                    <li><a href="#">Body Parts</a></li>
+                    <li><a href="#">Brake System</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Cooling System</a></li>
+                    <li><a href="#">Electrical</a></li>
+                    <li><a href="#">Exhaust</a></li>
+
+                </ul>
+            </section>
+            <section class="link2">
+                <h2>
+                    Quick Links
+                </h2>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Contribute</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </section>
+            <section class="link3">
+                <h2>
+                    Contact Us
+                </h2>
+                <ul>
+                    <li><i class="fa fa-home"></i><span>Address</span></li>
+                    <li><i class="fa fa-envelope"></i><span>Email</span></li>
+                    <li><i class="fa fa-phone-square"></i><span>Number</span></li>
+                    <li><i class="fa fa-instagram"></i><a href="https://www.instagram.com/SparkPlug_Automotives">Instagram</a></li>
+                </ul>
+            </section>
+        </section>
+        <div class="slider-box">
+            <div id="slider">
+              <img src="./Assets/Engine-Pictures.jpg" alt="">
+              <img src="./Assets/mclaren_p1_gtr_mclaren_p1_mclaren_128793_1920x1080.jpg" alt="">
+              <img src="./Assets/exhaust-wallpapers.jpg" alt="">
+              <img src="./Assets/bmw_m4_vorsteiner_gtrs4_golden_side_view_107622_1920x1080.jpg" alt="">
+            </div>
+            <div class="indicators">
+              <span id="btn1" class="active"></span>
+              <span id="btn2"></span>
+              <span id="btn3"></span>
+              <span id="btn4"></span>
+              
+            </div>
+          </div>
+          <script>
+            var slide = document.getElementById("slider");
+            var btn1 = document.getElementById("btn1");
+            var btn2 = document.getElementById("btn2");
+            var btn3 = document.getElementById("btn3");
+            var btn4 = document.getElementById("btn4");
+            
+            btn1.onclick = function(){
+              slide.style.transform = "translateX(0px)"
+              btn1.classList.add("active");
+              btn2.classList.remove("active");
+              btn3.classList.remove("active");
+              btn4.classList.remove("active");
+            }
+            btn2.onclick = function(){
+              slide.style.transform = "translateX(-100%)"
+              btn2.classList.add("active");
+              btn1.classList.remove("active");
+              btn3.classList.remove("active");
+              btn4.classList.remove("active");
+            }
+            btn3.onclick = function(){
+              slide.style.transform = "translateX(-200%)"
+              btn3.classList.add("active");
+              btn1.classList.remove("active");
+              btn2.classList.remove("active");
+              btn4.classList.remove("active");
+            }
+            btn4.onclick = function(){
+              slide.style.transform = "translateX(-300%)"
+              btn4.classList.add("active");
+              btn1.classList.remove("active");
+              btn2.classList.remove("active");
+              btn3.classList.remove("active");
+            }
+          </script>
+        <hr width="100%" noshade/>
+        <section class="sec2">
+            <p>Register for free</p>
+            <a href="#">Signup!</a>
+        </section>
+        <hr width="100%" noshade/>
+        <section class="sec3">
+            <ul>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-google"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </section>
+        <section class="sec4">
+            <p>
+                Copyright &copy; 2021 All Rights reserved by SparkPlug Automotives 
+                <a href="https://www.instagram.com/SparkPlug_Automotives"></a>
+            </p>
+        </section>
+    </footer>
+   
+</body>
+</html>
